@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Baked Kik Team"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <baked.kik.widget.preferences.KinkyPopup android:enabled="true" android:title="@string/kinky_popup_title" android:key="kik.kinky" />
+    <baked.kik.widget.preferences.KinkyTutorial android:enabled="true" android:title="@string/kinky_tutorial_title" android:key="kik.baked" />
+    <baked.kik.widget.preferences.KikEmptyPreference android:title="Sample Text" />
+    <baked.kik.widget.preferences.HelpPreference android:enabled="true" android:title="Creator of bakedkik" android:key="kik.help" android:summary="your descritption here">
+        <intent android:action="android.intent.action.VIEW" android:data="kik://users/XXxCameranxXX/profile" />
+    </baked.kik.widget.preferences.HelpPreference>
+    <baked.kik.widget.preferences.KikEmptyPreference android:title="Shoutout to:" />
+    <baked.kik.widget.preferences.HelpPreference android:enabled="true" android:title="Kgod" android:key="kik.help" android:summary="He is pretty helpful">
+        <intent android:action="android.intent.action.VIEW" android:data="kik://users/.no_u/profile" />
+    </baked.kik.widget.preferences.HelpPreference>
+    <baked.kik.widget.preferences.KikEmptyPreference android:title="How to use dividers if you want ->" kik:pref_divider="bottom|top" />
+</PreferenceScreen>

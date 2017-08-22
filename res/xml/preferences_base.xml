@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Mod Settings" android:key="@string/title_chat_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <baked.kik.widget.preferences.TogglePreference android:enabled="true" android:title="Disable Is Typing" android:key="base.typing" android:summary="Disables the is typing... message" kik:pref_divider="top" />
+    <baked.kik.widget.preferences.TogglePreference android:enabled="true" android:title="Disable Read Reipts" android:key="base.r" android:summary="Disables R" kik:pref_divider="top" />
+    <baked.kik.widget.preferences.TogglePreference android:enabled="true" android:title="Disable Delievered Receipts" android:key="base.d" android:summary="Disables D" kik:pref_divider="top" />
+    <baked.kik.widget.preferences.TogglePreference android:enabled="true" android:title="24 hour no pic bypass" android:key="kinky.bypass" android:summary="Gallery pics send as gifs" kik:pref_divider="top" />
+</PreferenceScreen>

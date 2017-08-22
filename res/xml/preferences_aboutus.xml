@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/title_help_about_us"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <baked.kik.widget.preferences.TOSPreference android:enabled="true" android:title="@string/title_terms_of_service" android:key="kik.privacy.terms.of.service" kik:pref_divider="none" />
+    <baked.kik.widget.preferences.PrivacyPolicyPreference android:enabled="true" android:title="@string/title_privacy_policy" android:key="kik.privacy.policy" kik:pref_divider="top" />
+    <baked.kik.widget.preferences.CommunityGuideLinesPreference android:enabled="true" android:title="@string/title_community_guidelines" android:key="kik.community.guidelines" kik:pref_divider="top">
+        <intent android:action="android.intent.action.VIEW" android:data="@string/web_kik_community_guidelines" />
+    </baked.kik.widget.preferences.CommunityGuideLinesPreference>
+    <baked.kik.widget.preferences.HelpPreference android:enabled="true" android:title="@string/title_help" android:key="kik.help" kik:pref_divider="top">
+        <intent android:action="android.intent.action.VIEW" android:data="@string/web_kik_support" />
+    </baked.kik.widget.preferences.HelpPreference>
+    <baked.kik.widget.preferences.LicensePreference android:enabled="true" android:title="@string/title_licenses" android:key="kik.licenses" kik:pref_divider="top" />
+    <baked.kik.widget.preferences.DevelopersPreference android:title="@string/title_developers" kik:pref_divider="top" kik:preference_screen="@xml/preferences_developers" kik:topbar_alt_layout="@layout/kik_back_button" />
+    <baked.kik.widget.preferences.KinWalletPreference android:enabled="true" android:title="KIN Wallet Preview" android:key="kik.kinwallet" kik:pref_divider="top">
+        <intent android:targetPackage="baked.kik" android:action="android.intent.action.VIEW" android:data="cards://kinpreview.kik.com/" />
+    </baked.kik.widget.preferences.KinWalletPreference>
+    <baked.kik.widget.preferences.CopyrightPreference android:enabled="true" android:title="@string/title_copyright" android:key="kik.copyright" kik:pref_divider="full_bottom|top" />
+</PreferenceScreen>

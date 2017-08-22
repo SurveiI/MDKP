@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Baked kik Settings"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kik="http://schemas.android.com/apk/res-auto">
+    <baked.kik.widget.preferences.KinkyGodTabPref android:title="Dev Menu" kik:preference_screen="@xml/preferences_baked" kik:topbar_alt_layout="@layout/kik_back_button" />
+    <baked.kik.widget.preferences.KinkyGodTabPref android:title="Mod Settings" kik:preference_screen="@xml/preferences_base" kik:topbar_alt_layout="@layout/kik_back_button" />
+    <baked.kik.widget.preferences.KikEmptyPreference android:title="Sample Text" />
+</PreferenceScreen>
